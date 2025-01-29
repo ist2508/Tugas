@@ -1,0 +1,155 @@
+/* Reset beberapa default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - latar belakang biru dengan teks putih */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Latar belakang terang */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header - bagian atas halaman */
+header {
+    background-color: #007bff; /* Biru untuk header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-bottom: 3px solid #0056b3; /* Garis bawah header */
+}
+
+/* Main - area konten utama */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+/* Section - tampilan konfirmasi penghapusan */
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Judul bagian konfirmasi */
+h2 {
+    color: #007bff; /* Biru untuk judul bagian */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Tabel - desain tabel yang bersih dan modern */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Header tabel */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    border-radius: 5px 5px 0 0; /* Sudut atas tabel melengkung */
+}
+
+/* Sel tabel */
+td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+/* Tombol Hapus */
+form button {
+    background-color: #e74c3c; /* Merah untuk tombol hapus */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol hapus */
+form button:hover {
+    background-color: #c0392b;
+}
+
+/* Tombol kembali */
+a.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol kembali */
+a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer - area bawah halaman */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Tombol logout */
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #003c8f;
+}
+
+/* Responsif - tampilan untuk layar kecil */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
